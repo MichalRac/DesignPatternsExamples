@@ -7,15 +7,15 @@ using UnityEngine.UI;
 public class Match2Card : MonoBehaviour
 {
     private Match2CardData match2CardData;
+    //private Match2CardDataProxy match2CardData;
+
     [SerializeField] private Image image;
     [SerializeField] private Text text;
 
     public void Setup(int id)
     {
         match2CardData = new Match2CardData(id);
-
-        //text.text = match2CardData.Text;
-        //image.color = match2CardData.Color;
+        //match2CardData = new Match2CardDataProxy(id);
     }
 
     public int GetID()

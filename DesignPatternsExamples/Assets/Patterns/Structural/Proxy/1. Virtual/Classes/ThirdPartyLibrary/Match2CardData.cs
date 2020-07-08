@@ -6,8 +6,8 @@ namespace ThirdPartyLibrary
     {
         private int id;
         public int Id { get => id; set => id = value; }
-        public Color Color { get; private set; }
-        public string Text { get; private set; }
+        public Color Color { get; set; }
+        public string Text { get; set; }
 
         // Hypothetically costly constructor generating all sorts of values based of id
         public Match2CardData(int id)
@@ -23,11 +23,6 @@ namespace ThirdPartyLibrary
 
             // Representing randomizing text based off id
             Text = id.ToString();
-        }
-
-        public bool Compare(IMatchable other)
-        {
-            return Id == other.Id;
         }
     }
 }

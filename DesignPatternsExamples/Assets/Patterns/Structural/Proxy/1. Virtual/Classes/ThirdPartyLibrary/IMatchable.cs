@@ -8,6 +8,8 @@ namespace ThirdPartyLibrary
     public interface IMatchable
     {
         int Id { get; set; }
-        bool Compare(IMatchable other);
+        Color Color { get; set; }
+        string Text { get; set; }
     }
+
 }
