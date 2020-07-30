@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace ThirdPartyLibrary
 {
@@ -8,6 +9,8 @@ namespace ThirdPartyLibrary
         public int Id { get => id; set => id = value; }
         public Color Color { get; set; }
         public string Text { get; set; }
+
+        public List<int> memoryEater = new List<int>();
 
         // Hypothetically costly constructor generating all sorts of values based of id
         public Match2CardData(int id)
@@ -23,6 +26,12 @@ namespace ThirdPartyLibrary
 
             // Representing randomizing text based off id
             Text = id.ToString();
+
+            // Memory eater
+            for(int i = 0; i < 10000000; i++)
+            {
+                memoryEater.Add(i);
+            }
         }
     }
 }

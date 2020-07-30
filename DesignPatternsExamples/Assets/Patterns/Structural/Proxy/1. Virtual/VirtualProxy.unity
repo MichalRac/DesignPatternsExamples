@@ -373,7 +373,7 @@ MonoBehaviour:
   m_CellSize: {x: 50, y: 50}
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 1
-  m_ConstraintCount: 7
+  m_ConstraintCount: 6
 --- !u!114 &275788907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +441,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
